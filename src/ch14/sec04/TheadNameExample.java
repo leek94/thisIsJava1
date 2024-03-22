@@ -12,7 +12,7 @@ public class TheadNameExample {
 				@Override
 				public void run() {
 					System.out.println(getName() + " 실행");
-					// getName()
+					// getName() 익명 객체 내부에 만들어져서 객체 없이 써야함
 				}
 			};
 			threadA.start();
@@ -22,6 +22,7 @@ public class TheadNameExample {
 			@Override
 			public void run() {
 				System.out.println(getName() + " 실행1");
+				// getName() 익명 객체 내부에 만들어져서 객체 없이 써야함
 			}
 		};
 		chatThread.setName("chat-thread"); 
