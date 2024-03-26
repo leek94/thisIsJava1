@@ -16,7 +16,7 @@ public class ex4 {
 				charNum = (charNum % 122) + 96;
 
 			}
-			answer += (char) +charNum + "";
+			answer += (char)charNum + "";
 		}
 
 		System.out.println(answer);
